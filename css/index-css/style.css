@@ -1,0 +1,495 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Garamond", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  place-items: center;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+#page-header {
+  display: grid;
+}
+
+#page-header-mobile {
+  display: grid;
+  grid-auto-flow: column;
+  background-color: #2c2c2c;
+  min-height: 50px;
+  place-items: center;
+}
+
+#page-header-desktop {
+  display: none;
+}
+
+#page-header-logo {
+  width: 40px;
+  justify-self: start;
+}
+
+#page-header-menu {
+  width: 30px;
+  justify-self: end;
+  margin-right: 10px;
+}
+
+#page-main-desktop-layout {
+  display: none;
+}
+
+#page-main {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+#page-main-section-title {
+  display: grid;
+  grid-auto-flow: row;
+  padding-top: 40px;
+  row-gap: 20px;
+  background-color: #2c2c2c;
+}
+#page-main-section-title > h2 {
+  color: whitesmoke;
+  letter-spacing: 2px;
+  margin: 0 10vw;
+  font-size: 2.3rem;
+}
+#page-main-section-title > p {
+  color: #feded6;
+  margin: 0 8vw;
+  font-size: 1.2rem;
+}
+#page-main-section-title > button {
+  color: whitesmoke;
+  background-color: #2c2c2c;
+  width: 200px;
+  height: 50px;
+  border-color: #f6c6bb;
+  font-size: 1.5rem;
+  justify-self: center;
+}
+#page-main-section-title > button:active {
+  background-color: #f6c6bb;
+  color: #2c2c2c;
+}
+#page-main-section-title > button:hover {
+  cursor: pointer;
+}
+
+#page-main-restaurant-name {
+  color: #f6c6bb;
+}
+#page-main-restaurant-name > p {
+  font-size: 0.8rem;
+}
+
+#page-main-contact-address {
+  color: whitesmoke;
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 10px;
+  padding-top: 30px;
+  margin: 0 20vw;
+  padding-bottom: 40px;
+}
+
+#page-main-reservation-section {
+  background-image: url(/img/index-img/pexels-adonyi-gábor-1407846.jpg);
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  padding-top: 30px;
+}
+#page-main-reservation-section > h1 {
+  color: whitesmoke;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#page-main-reservation-form {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 15px;
+  margin: 0 5vw;
+}
+#page-main-reservation-form > input {
+  color: #f6c6bb;
+  border: none;
+  padding: 15px;
+  background-color: #2c2c2c;
+  caret-color: #f6c6bb;
+}
+#page-main-reservation-form > input::-moz-placeholder {
+  color: #f6c6bb;
+}
+#page-main-reservation-form > input:-ms-input-placeholder {
+  color: #f6c6bb;
+}
+#page-main-reservation-form > input::placeholder {
+  color: #f6c6bb;
+}
+#page-main-reservation-form > button {
+  padding: 10px;
+  font-size: 1.2rem;
+  background-color: #f6c6bb;
+  color: #2c2c2c;
+  border-color: #f6c6bb;
+  font-weight: 600;
+}
+#page-main-reservation-form > button:active {
+  background-color: transparent;
+}
+#page-main-reservation-form > button:hover {
+  cursor: pointer;
+}
+
+#page-main-about {
+  display: grid;
+  place-items: center;
+}
+
+.page-main-about-div {
+  display: grid;
+  row-gap: 20px;
+  margin: 40px 10vw 0;
+}
+.page-main-about-div > h1 {
+  letter-spacing: 2px;
+}
+.page-main-about-div > p {
+  color: #9d9d9d;
+}
+
+.page-main-pictures {
+  display: grid;
+  grid-auto-flow: column;
+  margin-top: 40px;
+  width: 100%;
+}
+.page-main-pictures > img {
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.page-main-about-div > button {
+  color: #2c2c2c;
+  background-color: #f6c6bb;
+  width: 200px;
+  height: 50px;
+  border: none;
+  font-size: 1.5rem;
+  justify-self: center;
+}
+.page-main-about-div > button:hover {
+  cursor: pointer;
+}
+
+#page-main-testimonials {
+  display: grid;
+  place-items: center;
+  margin-top: 40px;
+}
+#page-main-testimonials > h1 {
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+.page-main-testimonials-div {
+  display: grid;
+  margin: 30px 15vw 0;
+  line-height: 20px;
+}
+.page-main-testimonials-div > img {
+  width: 40px;
+  justify-self: center;
+}
+.page-main-testimonials-div > p {
+  color: #9d9d9d;
+  margin-bottom: 10px;
+}
+
+#page-footer {
+  display: grid;
+  grid-auto-flow: row;
+  place-items: center;
+  margin-top: 40px;
+  background-color: #2c2c2c;
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 30px;
+  row-gap: 20px;
+}
+
+#page-footer-contact {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 30px;
+}
+#page-footer-contact > h1 {
+  font-size: 2rem;
+}
+#page-footer-contact > a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: whitesmoke;
+}
+#page-footer-contact > a:hover {
+  color: #f6c6bb;
+}
+#page-footer-contact > div {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  margin: 0 25vw;
+}
+#page-footer-contact > div > img {
+  width: 30px;
+}
+#page-footer-contact > div > img:hover {
+  fill: #f6c6bb;
+  cursor: pointer;
+}
+
+#page-footer-copyright {
+  margin-bottom: 30px;
+}
+
+#page-footer-contact-address {
+  font-size: 1.2rem;
+  margin: 0 15vw;
+}
+
+#page-footer-map {
+  display: grid;
+  place-items: center;
+}
+#page-footer-map > iframe {
+  height: 200px;
+  width: 98vw;
+}
+
+@media only screen and (min-width: 1080px) {
+  #page-main-mobile-layout {
+    display: none;
+  }
+
+  #page-header-mobile {
+    display: none;
+  }
+
+  #page-header-desktop {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    padding: 20px;
+    background-color: #2c2c2c;
+  }
+  #page-header-desktop > div {
+    display: grid;
+    grid-auto-flow: column;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  #page-header-desktop > div > a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  #page-header-desktop > div > a:hover {
+    cursor: pointer;
+    color: #f6c6bb;
+  }
+  #page-header-desktop > img {
+    justify-self: center;
+    width: 60px;
+  }
+
+  #page-main-desktop-layout {
+    display: grid;
+  }
+
+  #page-main-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #page-main-banner-left {
+    display: grid;
+    grid-auto-flow: row;
+    background-color: #2c2c2c;
+  }
+  #page-main-banner-left > h2 {
+    color: whitesmoke;
+  }
+  #page-main-banner-left > p {
+    color: whitesmoke;
+    margin: 0 10vw;
+  }
+  #page-main-banner-left > button {
+    width: 200px;
+    justify-self: center;
+    background-color: #2c2c2c;
+    color: whitesmoke;
+    border-color: #f6c6bb;
+    font-size: 1.5rem;
+  }
+  #page-main-banner-left > button:hover {
+    cursor: pointer;
+    background-color: #f6c6bb;
+    color: #2c2c2c;
+  }
+  #page-main-banner-left > button:active {
+    background-color: #2c2c2c;
+    color: whitesmoke;
+  }
+
+  #page-main-contact-address {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  #page-main-contact-address > a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  #page-main-contact-address > a:hover {
+    color: #f6c6bb;
+  }
+
+  #page-main-restaurant-name {
+    padding-top: 20px;
+  }
+
+  #page-main-banner-right {
+    background-image: url(/img/index-img/pexels-adonyi-gábor-1407846.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    padding: 80px;
+  }
+  #page-main-banner-right > h1 {
+    color: whitesmoke;
+    font-size: 1.5rem;
+  }
+  #page-main-banner-right > div {
+    padding-top: 20px;
+  }
+  #page-main-banner-right > div > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  #page-main-banner-right > div > div > input {
+    color: #f6c6bb;
+    border: none;
+    padding: 15px;
+    background-color: #2c2c2c;
+    caret-color: #f6c6bb;
+  }
+  #page-main-banner-right > div > button:hover {
+    background-color: #feded6;
+  }
+  #page-main-banner-right > div > button:active {
+    background-color: transparent;
+  }
+
+  #page-main-about-us {
+    display: grid;
+    place-items: center;
+    margin: 60px 10vw 0;
+  }
+
+  #page-main-about {
+    display: grid;
+    place-items: start;
+    grid-auto-flow: row;
+    row-gap: 20px;
+  }
+  #page-main-about > h1 {
+    font-size: 2rem;
+  }
+  #page-main-about > p {
+    color: #9d9d9d;
+  }
+
+  #page-main-about-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
+  #page-main-about-columns > div > h1 {
+    text-align: start;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  #page-main-about-columns > div > p {
+    text-align: start;
+  }
+
+  .page-main-pictures > img {
+    height: 340px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .page-main-about-div > h1 {
+    font-size: 2rem;
+  }
+  .page-main-about-div > button:hover {
+    background-color: #feded6;
+  }
+  .page-main-about-div > button:active {
+    background-color: #f6c6bb;
+  }
+
+  #page-main-testimonials-desktop {
+    display: grid;
+    margin: 70px 10vw 0;
+  }
+  #page-main-testimonials-desktop > h1 {
+    text-align: start;
+    font-size: 2rem;
+  }
+
+  #page-main-testimonials-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    line-height: 30px;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
+
+  .page-main-testimonials-column-div {
+    margin-top: 50px;
+    text-align: start;
+  }
+  .page-main-testimonials-column-div > img {
+    width: 50px;
+  }
+  .page-main-testimonials-column-div > h4 {
+    margin-top: 30px;
+  }
+
+  #page-footer-contact > div {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+
+  #page-footer-map > iframe {
+    height: 400px;
+  }
+}/*# sourceMappingURL=style.css.map */

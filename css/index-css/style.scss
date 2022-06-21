@@ -1,0 +1,551 @@
+$text_and_logo_color: #f6c6bb;
+$background_color: #2c2c2c;
+$text_color: #feded6;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Garamond", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    place-items: center;
+    width: 100%;
+  }
+  
+  img {
+    width: 100%;
+  }
+
+  #page-header {
+    display: grid;
+  }
+
+  #page-header-mobile {
+    display: grid;
+    grid-auto-flow: column;
+    background-color: $background_color;
+    min-height: 50px;
+    place-items: center;
+  }
+
+  #page-header-desktop {
+    display: none;
+  }
+
+  #page-header-logo {
+    width: 40px;
+    justify-self: start;
+  }
+
+  #page-header-menu {
+    width: 30px;
+    justify-self: end;
+    margin-right: 10px;
+  }
+
+  #page-main-desktop-layout {
+    display: none;
+  }
+
+  #page-main {
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+
+  #page-main-section-title {
+    display: grid;
+    grid-auto-flow: row;
+    padding-top: 40px;
+    row-gap: 20px;
+    background-color: $background_color;
+
+
+    >h2 {
+      color: whitesmoke;
+      letter-spacing: 2px;
+      margin: 0 10vw;
+      font-size: 2.3rem;
+    }
+
+    >p {
+      color: $text_color;
+      margin: 0 8vw;
+      font-size: 1.2rem;
+    }
+
+    >button {
+      color: whitesmoke;
+      background-color: $background_color;
+      width: 200px;
+      height: 50px;
+      border-color: $text_and_logo_color;
+      font-size: 1.5rem;
+      justify-self: center;
+    }
+
+    >button:active {
+      background-color: $text_and_logo_color;
+      color: $background_color;
+    }
+
+    >button:hover {
+      cursor: pointer;
+    }
+  }
+
+  #page-main-restaurant-name {
+    color: $text_and_logo_color;
+    
+    >p {
+      font-size: .8rem;
+  }
+}
+
+#page-main-contact-address {
+  color: whitesmoke;
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 10px;
+  padding-top: 30px;
+  margin: 0 20vw;
+  padding-bottom: 40px;
+}
+
+#page-main-reservation-section {
+  background-image: url(/img/index-img/pexels-adonyi-gábor-1407846.jpg);
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  padding-top: 30px;
+  
+  >h1 {
+    color: whitesmoke;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+}
+
+#page-main-reservation-form {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 15px;
+  margin: 0 5vw;
+
+  >input {
+    color: #f6c6bb;
+    border: none;
+    padding: 15px;
+    background-color: $background_color;
+    caret-color: #f6c6bb;
+  }
+
+  >input::placeholder {
+    color: $text_and_logo_color;
+  }
+
+  >button {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: $text_and_logo_color;
+    color: $background_color;
+    border-color: $text_and_logo_color;
+    font-weight: 600;
+  }
+
+  >button:active {
+    background-color: transparent;
+  }
+
+  >button:hover {
+    cursor: pointer;
+  }
+}
+
+#page-main-about {
+  display: grid;
+  place-items: center;
+}
+
+.page-main-about-div {
+  display: grid;
+  row-gap: 20px;
+  margin: 40px 10vw 0;
+
+  >h1 {
+    letter-spacing: 2px;
+  }
+
+  >p {
+    color: #9d9d9d;
+  }
+}
+
+.page-main-pictures {
+  display: grid;
+  grid-auto-flow: column;
+  margin-top: 40px;
+  width: 100%;
+  
+  >img {
+    height: 150px;
+    object-fit: cover;
+  }
+}
+
+.page-main-about-div {
+
+  >button {
+     color: $background_color;
+    background-color: $text_and_logo_color;
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-size: 1.5rem;
+    justify-self: center;
+  }
+
+  >button:hover {
+    cursor: pointer;
+  }
+}
+
+#page-main-testimonials {
+  display: grid;
+  place-items: center;
+  margin-top: 40px;
+
+  >h1 {
+    letter-spacing: 2px;
+    font-size: 2rem;
+  }
+}
+
+.page-main-testimonials-div {
+  display: grid;
+  margin: 30px 15vw 0;
+  line-height: 20px;
+
+  >img {
+    width: 40px;
+    justify-self: center;
+  }
+
+  >p {
+    color: #9d9d9d;
+    margin-bottom: 10px;
+  }
+}
+
+#page-footer {
+  display: grid;
+  grid-auto-flow: row;
+  place-items: center;
+  margin-top: 40px;
+  background-color: $background_color;
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 30px;
+  row-gap: 20px;
+}
+
+
+#page-footer-contact {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 30px;
+
+  >h1 {
+    font-size: 2rem;
+  }
+
+  >a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
+  >a:hover {
+    color: $text_and_logo_color;
+  }
+
+  >div {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    margin: 0 25vw;
+
+    >img {
+      width: 30px;
+    }
+
+    >img:hover {
+      fill: $text_and_logo_color;
+      cursor: pointer;
+    }
+  }
+}
+
+#page-footer-copyright {
+  margin-bottom: 30px;
+}
+
+#page-footer-contact-address {
+  font-size: 1.2rem;
+  margin: 0 15vw;
+}
+
+#page-footer-map {
+  display: grid;
+  place-items: center;
+
+  >iframe{
+  height: 200px;
+  width: 98vw;
+  }
+}
+
+@media only screen and (min-width: 1080px) { 
+  #page-main-mobile-layout {
+    display: none;
+  }
+
+  #page-header-mobile {
+    display: none;
+  }
+
+  #page-header-desktop {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    padding: 20px;
+    background-color: $background_color;
+
+    >div {
+      display: grid;
+      grid-auto-flow: column;
+      column-gap: 20px;
+    }
+
+    >div>a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+
+    >div>a:hover {
+      cursor: pointer;
+      color: $text_and_logo_color;
+    }
+
+    >img {
+      justify-self: center;
+      width: 60px;
+    }
+  }
+
+  #page-main-desktop-layout {
+    display: grid;
+   
+  }
+
+  #page-main-banner {
+    display: grid; grid-template-columns: 1fr 1fr;
+  }
+
+  #page-main-banner-left {
+    display: grid;
+    grid-auto-flow: row;
+    background-color: $background_color;
+
+    >h2 {
+      color: whitesmoke;
+    }
+
+    >p {
+      color: whitesmoke;
+      margin: 0 10vw;
+    }
+
+    >button {
+      width: 200px;
+      justify-self: center;
+      background-color: $background_color;
+      color: whitesmoke;
+      border-color: $text_and_logo_color;
+      font-size: 1.5rem;
+    }
+
+    >button:hover {
+      cursor: pointer;
+      background-color: $text_and_logo_color;
+      color: $background_color;
+    }
+
+    >button:active {
+      background-color: $background_color;
+      color: whitesmoke;
+    }
+  }
+
+  #page-main-contact-address {
+    margin: 0;
+    font-size: 1.5rem;
+
+    >a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+
+    >a:hover {
+      color: $text_and_logo_color;
+    }
+  }
+
+  #page-main-restaurant-name {
+    padding-top: 20px;
+  }
+
+  #page-main-banner-right {
+    background-image: url(/img/index-img/pexels-adonyi-gábor-1407846.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    padding: 80px;
+
+    >h1 {
+      color: whitesmoke;
+      font-size: 1.5rem;
+    }
+
+    >div {
+      padding-top: 20px;
+    }
+
+    >div>div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10px;
+    }
+
+    >div>div>input {
+        color: #f6c6bb;
+        border: none;
+        padding: 15px;
+        background-color: $background_color;
+        caret-color: #f6c6bb;
+    }
+
+    >div>button:hover {
+      background-color: $text_color;
+    }
+
+    >div>button:active {
+      background-color: transparent;
+    }
+  }
+
+  #page-main-about-us {
+    display: grid;
+    place-items: center;
+    margin: 60px 10vw 0;
+  }
+
+  #page-main-about {
+    display: grid;
+    place-items: start;
+    grid-auto-flow: row;
+    row-gap: 20px;
+
+    >h1 {
+      font-size: 2rem;
+    }
+
+    >p {
+      color: #9d9d9d;
+    }
+  }
+
+  #page-main-about-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+    column-gap: 80px;
+
+    >div>h1 {
+      text-align: start;
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    >div>p {
+      text-align: start;
+    }
+    
+  }
+
+  .page-main-pictures {
+    >img {
+      height: 340px;
+      object-fit: cover;
+    }
+  }
+
+  .page-main-about-div {
+    >h1 {
+      font-size: 2rem;
+    }
+
+    >button:hover {
+      background-color: $text_color;
+    }
+
+    >button:active {
+      background-color: $text_and_logo_color;
+    }
+  }
+
+  #page-main-testimonials-desktop {
+    display: grid;
+    margin: 70px 10vw 0;
+
+    >h1 {
+      text-align: start;
+      font-size: 2rem;
+    }
+  }
+
+  #page-main-testimonials-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    line-height: 30px;
+    column-gap: 80px;
+  }
+
+  .page-main-testimonials-column-div {
+    margin-top: 50px;
+    text-align: start;
+   
+    >img {
+      width: 50px;
+    }
+
+    >h4 {
+      margin-top: 30px;
+    }
+  }
+
+  #page-footer-contact {
+    >div {
+      column-gap: 50px;
+    }
+  }
+
+  #page-footer-map {
+    >iframe {
+      height: 400px;
+    }
+  }
+}
