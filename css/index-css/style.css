@@ -345,6 +345,7 @@ img {
     color: whitesmoke;
     border-color: #f6c6bb;
     font-size: 1.5rem;
+    height: 60px;
   }
   #page-main-banner-left > button:hover {
     cursor: pointer;
