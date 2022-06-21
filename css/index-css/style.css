@@ -162,7 +162,7 @@ img {
 
 .page-main-about-div {
   display: grid;
-  row-gap: 20px;
+  row-gap: 30px;
   margin: 40px 10vw 0;
 }
 .page-main-about-div > h1 {
@@ -170,6 +170,7 @@ img {
 }
 .page-main-about-div > p {
   color: #9d9d9d;
+  margin: 0 9vw;
 }
 
 .page-main-pictures {
