@@ -53,6 +53,11 @@ img {
   color: #2c2c2c;
   font-size: 1.5rem;
 }
+#page-main-mobile-banner > img {
+  max-height: 70vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 #page-main-mobile-why-us {
   display: grid;
@@ -63,6 +68,9 @@ img {
   width: 100%;
   height: 70vh;
   margin-top: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: start;
 }
 
 #page-main-mobile-why-us-topics {
@@ -71,6 +79,7 @@ img {
   text-align: center;
   margin: 0 15vw;
   row-gap: 20px;
+  transform: translateY(-50px);
 }
 #page-main-mobile-why-us-topics > div > p {
   color: #f6c6bb;
@@ -83,7 +92,6 @@ img {
   height: 80vh;
   background-position: center;
   background-size: cover;
-  margin-top: 30px;
   display: grid;
   place-items: center;
 }
@@ -116,4 +124,42 @@ img {
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 20px;
   margin: 0 10vw;
+}
+
+#page-main-mobile-feedback-donation {
+  display: grid;
+  grid-auto-flow: row;
+  place-items: center;
+  margin-top: 30px;
+}
+
+.page-main-mobile-feedback-donation-class {
+  width: 80%;
+  text-align: center;
+  height: 20vh;
+  background-image: linear-gradient(to bottom, #F5D5CE, #FFA18A, #F0D1C9, #FEDED6);
+}
+.page-main-mobile-feedback-donation-class > div {
+  display: grid;
+  row-gap: 20px;
+  padding-top: 20px;
+  color: #2c2c2c;
+}
+.page-main-mobile-feedback-donation-class > div > p {
+  color: whitesmoke;
+}
+.page-main-mobile-feedback-donation-class > div > h1 {
+  transform: translateY(-15px);
+  color: whitesmoke;
+}
+.page-main-mobile-feedback-donation-class > div > button {
+  transform: translateY(-10px);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: transparent;
+  border-color: #f6c6bb;
+  justify-self: center;
+  font-weight: bold;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=about.css.map */

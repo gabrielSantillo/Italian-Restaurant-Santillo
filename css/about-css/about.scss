@@ -58,6 +58,11 @@ $text_color: #feded6;
       color: $background_color;
       font-size: 1.5rem;
     }
+
+    >img {
+      max-height: 70vw;
+      object-fit: cover;
+    }
   }
 
   #page-main-mobile-why-us {
@@ -69,6 +74,9 @@ $text_color: #feded6;
     width: 100%;
     height: 70vh;
     margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: start;
   }
 
   #page-main-mobile-why-us-topics {
@@ -77,6 +85,7 @@ $text_color: #feded6;
     text-align: center;
     margin: 0 15vw;
     row-gap: 20px;
+    transform: translateY(-50px);
 
     >div>p {
       color: $text_and_logo_color;
@@ -90,7 +99,6 @@ $text_color: #feded6;
     height: 80vh;
     background-position: center;
     background-size: cover;
-    margin-top: 30px;
     display: grid;
     place-items: center;
   }
@@ -124,4 +132,47 @@ $text_color: #feded6;
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 20px;
   margin: 0 10vw;
+}
+
+#page-main-mobile-feedback-donation {
+  display: grid;
+  grid-auto-flow: row;
+  place-items: center;
+  margin-top: 30px;
+}
+
+.page-main-mobile-feedback-donation-class {
+  width: 80%;
+  text-align: center;
+  height: 20vh;
+  background-image: linear-gradient(to bottom, #F5D5CE, #FFA18A, #F0D1C9, #FEDED6);
+
+  >div {
+    display: grid;
+    row-gap: 20px;
+    padding-top: 20px;
+    color: $background_color;
+  }
+
+  >div>p {
+    color: whitesmoke
+  }
+
+  >div>h1 {
+    transform: translateY(-15px);
+    color: whitesmoke;
+  }
+
+  >div>button {
+    transform: translateY(-10px);
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+    border-color: $text_and_logo_color;
+    justify-self: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+  }
 }
