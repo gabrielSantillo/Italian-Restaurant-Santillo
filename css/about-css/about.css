@@ -63,6 +63,10 @@ img {
   display: grid;
 }
 
+#page-main-desktop {
+  display: none;
+}
+
 #page-main-mobile-with-us-img {
   background-image: url(/img/about-img/why-us-background.png);
   width: 100%;
