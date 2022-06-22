@@ -378,6 +378,74 @@ img {
     color: #feded6;
   }
 
+  #page-main-desktop-feedback-donation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin: 0 25vw;
+    margin-top: 80px;
+  }
+
+  #page-main-desktop-feedback-div {
+    background-image: linear-gradient(to right, #F5D5CE, #FFA18A, #FFA18A, #FEDED6);
+    width: 100%;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    color: whitesmoke;
+  }
+  #page-main-desktop-feedback-div > h1 {
+    transform: translateY(-30px);
+    font-size: 2rem;
+  }
+  #page-main-desktop-feedback-div > button {
+    transform: translateY(-20px);
+    border: none;
+    background-color: #feded6;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    color: whitesmoke;
+    font-weight: bold;
+  }
+  #page-main-desktop-feedback-div > button:hover {
+    background-color: #f6c6bb;
+    cursor: pointer;
+  }
+  #page-main-desktop-feedback-div > button:active {
+    background-color: #feded6;
+  }
+
+  #page-main-desktop-donation-div {
+    background-image: linear-gradient(to right, #FEDED6, #FFA18A, #FFA18A, #F5D5CE);
+    width: 100%;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    color: whitesmoke;
+  }
+  #page-main-desktop-donation-div > h1 {
+    transform: translateY(-30px);
+    font-size: 2rem;
+  }
+  #page-main-desktop-donation-div > button {
+    transform: translateY(-20px);
+    border: none;
+    background-color: #feded6;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    color: whitesmoke;
+    font-weight: bold;
+  }
+  #page-main-desktop-donation-div > button:hover {
+    background-color: #f6c6bb;
+    cursor: pointer;
+  }
+  #page-main-desktop-donation-div > button:active {
+    background-color: #feded6;
+  }
+
   #page-footer-contact > div {
     -moz-column-gap: 50px;
          column-gap: 50px;
