@@ -335,7 +335,7 @@ img {
     place-items: center;
   }
 
-  #page-main-desktop-why-us-description-div {
+  #page-main-desktop-why-us-description-card {
     background-color: #fff;
     width: 80%;
     height: 400px;
@@ -354,6 +354,28 @@ img {
   #page-main-desktop-why-us-title > h1 {
     color: whitesmoke;
     font-size: 3rem;
+  }
+
+  #page-main-desktop-why-us-description-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+  }
+  #page-main-desktop-why-us-description-div > div {
+    display: grid;
+    row-gap: 10px;
+    place-items: start;
+    margin: 0 10px;
+  }
+  #page-main-desktop-why-us-description-div > div > a {
+    text-decoration: none;
+    justify-self: center;
+    margin-top: 50px;
+    color: #f6c6bb;
+    font-weight: bold;
+  }
+  #page-main-desktop-why-us-description-div > div > a:hover {
+    color: #feded6;
   }
 
   #page-footer-contact > div {

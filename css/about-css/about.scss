@@ -362,7 +362,7 @@ $text_color: #feded6;
     place-items: center;
   }
 
-  #page-main-desktop-why-us-description-div {
+  #page-main-desktop-why-us-description-card {
     background-color: #fff;
     width: 80%;
     height: 400px;
@@ -381,6 +381,32 @@ $text_color: #feded6;
     >h1 {
       color: whitesmoke;
       font-size: 3rem;
+    }
+  }
+
+  #page-main-desktop-why-us-description-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    
+
+    >div {
+      display: grid;
+      row-gap: 10px;
+      place-items: start;
+      margin: 0 10px
+    }
+
+    >div>a {
+      text-decoration: none;
+      justify-self: center;
+      margin-top: 50px;
+      color: $text_and_logo_color;
+      font-weight: bold;
+    }
+
+    >div>a:hover {
+      color: $text_color;
     }
   }
 
