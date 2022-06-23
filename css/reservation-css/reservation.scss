@@ -1,0 +1,162 @@
+$text_and_logo_color: #f6c6bb;
+$background_color: #2c2c2c;
+$text_color: #feded6;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Garamond", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    place-items: center;
+    width: 100%;
+  }
+  
+  img {
+    width: 100%;
+  }
+
+  #page-header {
+    display: grid;
+  }
+
+  #page-header-desktop {
+    display: none;
+  }
+
+  #page-header-mobile {
+    display: grid;
+    grid-auto-flow: column;
+    background-color: $background_color;
+    min-height: 50px;
+    place-items: center;
+  }
+
+  #page-header-logo {
+    width: 40px;
+    justify-self: start;
+  }
+
+  #page-header-menu {
+    width: 30px;
+    justify-self: end;
+    margin-right: 10px;
+  }
+
+
+  #page-footer {
+  display: grid;
+  grid-auto-flow: row;
+  place-items: center;
+  margin-top: 40px;
+  background-color: $background_color;
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 30px;
+  row-gap: 20px;
+}
+
+
+#page-footer-contact {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 30px;
+
+  >h1 {
+    font-size: 2rem;
+  }
+
+  >a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
+  >a:hover {
+    color: $text_and_logo_color;
+  }
+
+  >div {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    margin: 0 25vw;
+
+    >img {
+      width: 30px;
+    }
+
+    >img:hover {
+      fill: $text_and_logo_color;
+      cursor: pointer;
+    }
+  }
+}
+
+#page-footer-copyright {
+  margin-bottom: 30px;
+}
+
+#page-footer-contact-address {
+  font-size: 1.2rem;
+  margin: 0 15vw;
+}
+
+#page-footer-map {
+  display: grid;
+  place-items: center;
+
+  >iframe{
+  height: 200px;
+  width: 98vw;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+    #page-header-mobile {
+        display: none;
+      }
+
+      #page-header-desktop {
+        display: grid;
+        grid-auto-flow: column;
+        place-items: center;
+        padding: 20px;
+        background-color: $background_color;
+    
+        >div {
+          display: grid;
+          grid-auto-flow: column;
+          column-gap: 20px;
+        }
+    
+        >div>a {
+          text-decoration: none;
+          color: whitesmoke;
+        }
+    
+        >div>a:hover {
+          cursor: pointer;
+          color: $text_and_logo_color;
+        }
+    
+        >img {
+          justify-self: center;
+          width: 60px;
+        }
+      }
+      
+      #page-footer-contact {
+        >div {
+          column-gap: 50px;
+        }
+      }
+    
+      #page-footer-map {
+        >iframe {
+          height: 400px;
+        }
+      }
+}
