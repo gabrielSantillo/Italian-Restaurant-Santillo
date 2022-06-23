@@ -398,6 +398,26 @@ $text_color: #feded6;
         background-position: center;
       }
     
+      #page-main-desktop-video-section {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin-top: 80px;
+
+        >div {
+            display: grid;
+            place-items: center;
+            text-align: center;
+            font-size: 2rem;
+            background-color: $text_and_logo_color;
+        }
+
+        >div>h1 {
+            background-color: whitesmoke;
+            border-radius: 5px;
+            margin: 0 2vw;
+            color: $text_and_logo_color;
+        }
+      }
 
       #page-footer-contact {
         >div {

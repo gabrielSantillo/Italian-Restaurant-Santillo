@@ -367,6 +367,25 @@ img {
     background-position: center;
   }
 
+  #page-main-desktop-video-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 80px;
+  }
+  #page-main-desktop-video-section > div {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #f6c6bb;
+  }
+  #page-main-desktop-video-section > div > h1 {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: 0 2vw;
+    color: #f6c6bb;
+  }
+
   #page-footer-contact > div {
     -moz-column-gap: 50px;
          column-gap: 50px;
