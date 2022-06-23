@@ -41,6 +41,77 @@ img {
   margin-right: 10px;
 }
 
+#page-main-mobile-banner {
+  background-image: url(/img/reservation-img/reservation-background.jpg);
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+#page-main-mobile-banner > h1 {
+  font-size: 2rem;
+  padding: 40px;
+  color: whitesmoke;
+  letter-spacing: 4px;
+}
+
+#page-main-mobile-celebrate-whit-us {
+  display: grid;
+  margin-top: 40px;
+  row-gap: 20px;
+}
+#page-main-mobile-celebrate-whit-us > h1 {
+  color: #f6c6bb;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0 5vw;
+  margin-bottom: 20px;
+}
+#page-main-mobile-celebrate-whit-us > p {
+  color: #9d9d9d;
+  margin: 0 10vw;
+}
+
+#page-main-mobile-three-cards {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.page-main-mobile-card {
+  display: grid;
+  height: 550px;
+  grid-template-rows: 1fr 6fr;
+}
+.page-main-mobile-card > div > h1 {
+  font-size: 1.5rem;
+}
+.page-main-mobile-card > div > p {
+  margin: 0 15vw;
+}
+
+#page-main-mobile-card-img-birthday {
+  background-image: url(/img/reservation-img/birthday-restaurant.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+
+#page-main-mobile-card-img-marriage {
+  background-image: url(/img/reservation-img/marriage-restaurant.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+
+#page-main-mobile-card-img-business {
+  background-image: url(/img/reservation-img/business-confraternization.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+
 #page-footer {
   display: grid;
   grid-auto-flow: row;
