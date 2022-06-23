@@ -321,6 +321,52 @@ img {
     font-size: 1.1rem;
   }
 
+  #page-main-desktop-three-cards {
+    display: grid;
+    grid-auto-flow: row;
+    margin-top: 100px;
+  }
+
+  .page-main-desktop-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 600px;
+  }
+  .page-main-desktop-card > div {
+    display: grid;
+    place-items: center;
+  }
+  .page-main-desktop-card > div > div {
+    display: grid;
+    row-gap: 50px;
+    text-align: center;
+  }
+  .page-main-desktop-card > div > div > h1 {
+    font-size: 4rem;
+  }
+  .page-main-desktop-card > div > div > p {
+    font-size: 1.5rem;
+    margin: 0 5vw;
+  }
+
+  #page-main-desktop-card-img-birthday {
+    background-image: url(/img/reservation-img/birthday-restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  #page-main-desktop-card-img-marriage {
+    background-image: url(/img/reservation-img/marriage-restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  #page-main-desktop-card-img-business {
+    background-image: url(/img/reservation-img/business-confraternization.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
   #page-footer-contact > div {
     -moz-column-gap: 50px;
          column-gap: 50px;
