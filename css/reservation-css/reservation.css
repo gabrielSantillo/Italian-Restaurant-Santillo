@@ -112,6 +112,24 @@ img {
   margin-bottom: 40px;
 }
 
+#page-main-mobile-video-section {
+  display: grid;
+  row-gap: 30px;
+  margin-top: 30px;
+  place-items: center;
+}
+#page-main-mobile-video-section > div {
+  width: 100%;
+  background-image: linear-gradient(315deg, #F5D5CE, #FFA18A, #FFA18A, #FEDED6);
+}
+#page-main-mobile-video-section > div > h1 {
+  font-size: 1.3rem;
+  margin: 0 5vw;
+  text-align: center;
+  padding: 5px;
+  color: whitesmoke;
+}
+
 #page-footer {
   display: grid;
   grid-auto-flow: row;
