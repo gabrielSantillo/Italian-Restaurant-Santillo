@@ -419,6 +419,18 @@ $text_color: #feded6;
         }
       }
 
+      #page-main-desktop-reservation {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+      }
+
+      #page-main-desktop-reservation-img {
+        background-image: url(/img/reservation-img/reservation-background-img.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
       #page-footer-contact {
         >div {
           column-gap: 50px;
