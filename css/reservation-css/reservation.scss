@@ -321,6 +321,33 @@ $text_color: #feded6;
         }
       } 
 
+      #page-main-desktop-celebrate-whit-us {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        height: 400px;
+        place-items: center;
+
+        >h1 {
+            font-size: 4rem;
+            text-align: center;
+            color: $text_and_logo_color;
+        }
+
+        >div {
+            display: grid;
+            background-image: linear-gradient(315deg, #F5D5CE, #FFA18A, #FFA18A, #FEDED6);
+            height: 100%;
+           
+        }
+
+        >div>p {
+            margin: 0 10vw;
+            padding-top: 40px;
+            color: whitesmoke;
+            font-size: 1.1rem;
+        }
+      }
+
       #page-footer-contact {
         >div {
           column-gap: 50px;

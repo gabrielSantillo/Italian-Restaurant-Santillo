@@ -298,6 +298,29 @@ img {
     letter-spacing: 4px;
   }
 
+  #page-main-desktop-celebrate-whit-us {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 400px;
+    place-items: center;
+  }
+  #page-main-desktop-celebrate-whit-us > h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: #f6c6bb;
+  }
+  #page-main-desktop-celebrate-whit-us > div {
+    display: grid;
+    background-image: linear-gradient(315deg, #F5D5CE, #FFA18A, #FFA18A, #FEDED6);
+    height: 100%;
+  }
+  #page-main-desktop-celebrate-whit-us > div > p {
+    margin: 0 10vw;
+    padding-top: 40px;
+    color: whitesmoke;
+    font-size: 1.1rem;
+  }
+
   #page-footer-contact > div {
     -moz-column-gap: 50px;
          column-gap: 50px;
