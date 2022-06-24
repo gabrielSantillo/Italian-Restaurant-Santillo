@@ -234,6 +234,35 @@ $text_color: #feded6;
     #page-header-mobile {
       display: none;
     }
+  
+    #page-header-desktop {
+      display: grid;
+      grid-auto-flow: column;
+      place-items: center;
+      padding: 20px;
+      background-color: $background_color;
+  
+      >div {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 20px;
+      }
+  
+      >div>a {
+        text-decoration: none;
+        color: whitesmoke;
+      }
+  
+      >div>a:hover {
+        cursor: pointer;
+        color: $text_and_logo_color;
+      }
+  
+      >img {
+        justify-self: center;
+        width: 60px;
+      }
+    }
 
     #page-main-mobile {
       display: none;
@@ -269,37 +298,59 @@ $text_color: #feded6;
         }
       }
     }
-  
-    #page-header-desktop {
+
+    #page-main-desktop-offers-title {
       display: grid;
-      grid-auto-flow: column;
       place-items: center;
-      padding: 20px;
-      background-color: $background_color;
-  
-      >div {
-        display: grid;
-        grid-auto-flow: column;
-        column-gap: 20px;
-      }
-  
-      >div>a {
-        text-decoration: none;
-        color: whitesmoke;
-      }
-  
-      >div>a:hover {
-        cursor: pointer;
-        color: $text_and_logo_color;
-      }
-  
+      margin-top: 50px;
+
       >img {
-        justify-self: center;
-        width: 60px;
+        width: 600px;
+      }
+  
+      >h1 {
+        font-size: 3rem;
+        margin: 0 5vw;
+        text-align: center;
+        transform: translateY(-20px);
       }
     }
 
-    
+    #page-main-desktop-offers {
+      background-image: url(/img/menu-img/slice-pizza.jpg);
+      width: 80%;
+      height: 40vh;
+      display: grid;
+      justify-self: center;
+      background-size: cover;
+      background-position: bottom;
+
+      >div {
+        display: grid;
+        height: 250px;
+        background-color: #fff;
+        margin: 10vh 10vw;
+        transform: translateY(150px);
+      }
+
+      >div>h1 {
+        margin: 20px 3vw;
+        font-size: 2.5rem;
+      }
+
+      >div>p {
+        margin: 8px 3vw;
+        font-size: 1.8rem;
+      }
+
+      >div>img {
+        width: 50px;
+        justify-self: end;
+        margin: 0 10vw;
+        transform: translateY(-60px);
+      }
+    }
+
     #page-footer-contact {
       >div {
         column-gap: 50px;
