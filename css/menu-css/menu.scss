@@ -319,18 +319,18 @@ $text_color: #feded6;
     #page-main-desktop-offers {
       background-image: url(/img/menu-img/slice-pizza.jpg);
       width: 80%;
-      height: 40vh;
+      height: 80vh;
       display: grid;
       justify-self: center;
       background-size: cover;
-      background-position: bottom;
+      background-position: center;
 
       >div {
         display: grid;
         height: 250px;
         background-color: #fff;
-        margin: 10vh 10vw;
-        transform: translateY(150px);
+        margin: 0 10vw;
+        transform: translateY(450px);
       }
 
       >div>h1 {
@@ -344,10 +344,10 @@ $text_color: #feded6;
       }
 
       >div>img {
-        width: 50px;
+        width: 75px;
         justify-self: end;
         margin: 0 10vw;
-        transform: translateY(-60px);
+        transform: translateY(-70px);
       }
     }
 
