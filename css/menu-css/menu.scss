@@ -75,6 +75,41 @@ $text_color: #feded6;
     }
   }
 
+  #page-main-mobile-offers-title {
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+
+    >h1 {
+      font-size: 2.5rem;
+      margin: 0 5vw;
+      text-align: center;
+      transform: translateY(-20px);
+    }
+  }
+
+  #page-main-mobile-offers {
+    display: grid;
+    margin-top: 20px;
+    margin: 0 5vw;
+
+    >h1 {
+      margin: 20px 10vw;
+      font-size: 1.5rem;
+    }
+
+    >p {
+      margin: 0 10vw;
+      font-size: 1.2rem;
+    }
+
+    >#page-main-mobile-offers-icon {
+      width: 50px;
+      justify-self: end;
+      margin: 0 10vw;
+    }
+  }
+
   #page-footer {
     display: grid;
     grid-auto-flow: row;
