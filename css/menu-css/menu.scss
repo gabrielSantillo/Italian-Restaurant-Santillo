@@ -110,6 +110,55 @@ $text_color: #feded6;
     }
   }
 
+  #page-main-mobile-menu-title {
+    margin-top: 50px;
+    display: grid;
+    place-items: center;
+
+    >.page-main-mobile-menu-title-h1 {
+      font-size: 2rem;
+      background-image: linear-gradient(45deg, #F5D5CE, #FFA18A, #FFA18A, #FEDED6);
+      width: 100%;
+      text-align: center;
+      color: whitesmoke;
+      margin-bottom: 50px;
+    }
+  }
+
+  #page-main-mobile-menu {
+    display: grid;
+    
+  }
+
+  .page-main-mobile-menu-card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 0 5vw 60px;
+
+    >img {
+      height: 100px;
+      object-fit: cover;
+    }
+
+    >div {
+      display: grid;
+      margin: 0 5vw;
+    }
+
+    >div>div {
+      display: grid;
+    }
+  }
+
+  .page-main-mobile-menu-title-h1 {
+    font-size: 2rem;
+    background-image: linear-gradient(45deg, #F5D5CE, #FFA18A, #FFA18A, #FEDED6);
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 50px;
+  }
+
   #page-footer {
     display: grid;
     grid-auto-flow: row;
