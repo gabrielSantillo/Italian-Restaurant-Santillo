@@ -170,8 +170,9 @@ $text_color: #feded6;
     }
   }
 
-  
-  
+  #page-footer-contact-desktop {
+    display: none;
+  }  
 
   @media only screen and (min-width: 1080px) {
     #page-header-mobile {
@@ -294,5 +295,13 @@ $text_color: #feded6;
         >iframe {
           height: 400px;
         }
+      }
+
+      #page-footer-contact-desktop {
+        display: grid;
+      }
+    
+      #page-footer-contact-mobile {
+        display: none;
       }
   }

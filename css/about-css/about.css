@@ -228,6 +228,10 @@ img {
   width: 98vw;
 }
 
+#page-footer-contact-desktop {
+  display: none;
+}
+
 @media only screen and (min-width: 1080px) {
   #page-main-mobile {
     display: none;
@@ -457,5 +461,13 @@ img {
 
   #page-footer-map > iframe {
     height: 400px;
+  }
+
+  #page-footer-contact-desktop {
+    display: grid;
+  }
+
+  #page-footer-contact-mobile {
+    display: none;
   }
 }/*# sourceMappingURL=about.css.map */

@@ -113,6 +113,15 @@ $text_color: #feded6;
   padding-top: 30px;
   margin: 0 20vw;
   padding-bottom: 40px;
+
+  >a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
+  >a:hover {
+    color: $text_and_logo_color;
+  }
 }
 
 #page-main-reservation-section {
@@ -264,7 +273,7 @@ $text_color: #feded6;
     font-size: 2rem;
   }
 
-  >a {
+  >a, p {
     font-size: 1.5rem;
     text-decoration: none;
     color: whitesmoke;
@@ -308,6 +317,10 @@ $text_color: #feded6;
   height: 200px;
   width: 98vw;
   }
+}
+
+#page-footer-contact-desktop {
+  display: none;
 }
 
 @media only screen and (min-width: 1080px) { 
@@ -550,5 +563,13 @@ $text_color: #feded6;
     >iframe {
       height: 400px;
     }
+  }
+
+  #page-footer-contact-desktop {
+    display: grid;
+  }
+
+  #page-footer-contact-mobile {
+    display: none;
   }
 }

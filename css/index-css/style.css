@@ -104,6 +104,13 @@ img {
   margin: 0 20vw;
   padding-bottom: 40px;
 }
+#page-main-contact-address > a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+#page-main-contact-address > a:hover {
+  color: #f6c6bb;
+}
 
 #page-main-reservation-section {
   background-image: url(/img/index-img/pexels-adonyi-gábor-1407846.jpg);
@@ -243,7 +250,7 @@ img {
 #page-footer-contact > h1 {
   font-size: 2rem;
 }
-#page-footer-contact > a {
+#page-footer-contact > a, #page-footer-contact p {
   font-size: 1.5rem;
   text-decoration: none;
   color: whitesmoke;
@@ -281,6 +288,10 @@ img {
 #page-footer-map > iframe {
   height: 200px;
   width: 98vw;
+}
+
+#page-footer-contact-desktop {
+  display: none;
 }
 
 @media only screen and (min-width: 1080px) {
@@ -494,5 +505,13 @@ img {
 
   #page-footer-map > iframe {
     height: 400px;
+  }
+
+  #page-footer-contact-desktop {
+    display: grid;
+  }
+
+  #page-footer-contact-mobile {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
