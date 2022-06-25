@@ -224,6 +224,22 @@ $text_color: #feded6;
   }
 }
 
+#page-main-mobile-introductory-video {
+  display: grid;
+  margin-top: 50px;
+  row-gap: 20px;
+
+  >div {
+    background-image: linear-gradient(45deg, #F5D5CE, #FFA18A, #FFA18A, #FEDED6);
+  }
+
+  >div>h1 {
+    font-size: 2rem;
+    color: whitesmoke;
+    margin: 2vh 3vw;
+  }
+}
+
 #page-main-testimonials {
   display: grid;
   place-items: center;
@@ -520,6 +536,23 @@ $text_color: #feded6;
 
     >button:active {
       background-color: $text_and_logo_color;
+    }
+  }
+
+  #page-main-desktop-introductory-video {
+    display: grid;
+    margin-top: 70px;
+    grid-template-columns: 1fr 2fr;
+    
+    >div {
+      background-image: linear-gradient(45deg, #F5D5CE, #FFA18A, #FFA18A, #FEDED6);
+      display: grid;
+      place-items: center;
+    }
+
+    >div>h1 {
+      color: whitesmoke;
+      font-size: 3rem;
     }
   }
 

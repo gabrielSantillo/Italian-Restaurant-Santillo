@@ -206,6 +206,20 @@ img {
   cursor: pointer;
 }
 
+#page-main-mobile-introductory-video {
+  display: grid;
+  margin-top: 50px;
+  row-gap: 20px;
+}
+#page-main-mobile-introductory-video > div {
+  background-image: linear-gradient(45deg, #F5D5CE, #FFA18A, #FFA18A, #FEDED6);
+}
+#page-main-mobile-introductory-video > div > h1 {
+  font-size: 2rem;
+  color: whitesmoke;
+  margin: 2vh 3vw;
+}
+
 #page-main-testimonials {
   display: grid;
   place-items: center;
@@ -468,6 +482,21 @@ img {
   }
   .page-main-about-div > button:active {
     background-color: #f6c6bb;
+  }
+
+  #page-main-desktop-introductory-video {
+    display: grid;
+    margin-top: 70px;
+    grid-template-columns: 1fr 2fr;
+  }
+  #page-main-desktop-introductory-video > div {
+    background-image: linear-gradient(45deg, #F5D5CE, #FFA18A, #FFA18A, #FEDED6);
+    display: grid;
+    place-items: center;
+  }
+  #page-main-desktop-introductory-video > div > h1 {
+    color: whitesmoke;
+    font-size: 3rem;
   }
 
   #page-main-testimonials-desktop {
