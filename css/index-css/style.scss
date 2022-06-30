@@ -18,11 +18,15 @@ $text_color: #feded6;
     width: 100%;
 }
 
+#page-header {
+  display: grid;
+}
+
 #page-header-desktop {
   display: none;
 }
 
-#mobile_header {
+#page-header-mobile {
     min-height: 10vh;
     width: 100%;
     background-color: $background_color;
@@ -381,7 +385,7 @@ $text_color: #feded6;
     display: none;
   }
 
-  #mobile_header {
+  #page-header-mobile {
     display: none;
   }
 
