@@ -10,36 +10,69 @@ body {
   width: 100%;
 }
 
-img {
+img, svg, iframe {
   width: 100%;
-}
-
-#page-header {
-  display: grid;
-}
-
-#page-header-mobile {
-  display: grid;
-  grid-auto-flow: column;
-  background-color: #2c2c2c;
-  min-height: 50px;
-  place-items: center;
 }
 
 #page-header-desktop {
   display: none;
 }
 
-#page-header-logo {
-  width: 80px;
-  justify-self: start;
-  margin-left: 25px;
+#mobile_header {
+  min-height: 10vh;
+  width: 100%;
+  background-color: #2c2c2c;
+  display: grid;
+  place-items: center;
+  grid-auto-flow: column;
+}
+#mobile_header > img {
+  width: 60px;
+  height: 60px;
+}
+#mobile_header > label > img {
+  width: 30px;
+  height: 30px;
 }
 
-#page-header-menu {
-  width: 30px;
-  justify-self: end;
-  margin-right: 10px;
+.menu_radio_button {
+  display: none;
+}
+
+#mobile_menu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
+  display: none;
+  place-items: center;
+  grid-template-rows: 20vh;
+  width: 50%;
+  height: 100%;
+  background-color: #f6c6bb;
+  color: white;
+}
+#mobile_menu > a {
+  text-decoration: none;
+  color: #2c2c2c;
+  font-size: 2rem;
+  font-weight: bold;
+}
+#mobile_menu > div > label > img {
+  width: 40px;
+  height: 40px;
+}
+
+#menu_open:checked ~ #mobile_menu {
+  display: grid;
+}
+
+#menu_header {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  grid-auto-flow: column;
+  height: 10vh;
 }
 
 #page-main-desktop {
