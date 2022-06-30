@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -113,7 +112,7 @@ img {
 }
 
 #page-main-reservation-section {
-  background-image: url(/img/index-img/pexels-adonyi-gábor-1407846.jpg);
+  background-image: url(/img/index-img/index-background-img.png);
   width: 100%;
   height: 500px;
   background-size: cover;
@@ -400,7 +399,7 @@ img {
   }
 
   #page-main-banner-right {
-    background-image: url(/img/index-img/pexels-adonyi-gábor-1407846.jpg);
+    background-image: url(/img/index-img/index-background-img.png);
     background-position: center;
     background-size: cover;
     display: grid;
