@@ -22,10 +22,6 @@ $text_color: #feded6;
     display: grid;
   }
 
-  #page-header-desktop {
-    display: none;
-  }
-
   #page-header-mobile {
     display: grid;
     grid-auto-flow: column;
@@ -34,9 +30,14 @@ $text_color: #feded6;
     place-items: center;
   }
 
+  #page-header-desktop {
+    display: none;
+  }
+
   #page-header-logo {
     width: 80px;
     justify-self: start;
+    margin-left: 25px;
   }
 
   #page-header-menu {
@@ -85,10 +86,15 @@ $text_color: #feded6;
     margin-top: 50px;
 
     >h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin: 0 5vw;
       text-align: center;
       transform: translateY(-20px);
+    }
+
+    >:nth-child(1) {
+      color: $text_and_logo_color;
+      font-size: 3rem;
     }
   }
 
@@ -305,17 +311,18 @@ $text_color: #feded6;
     #page-main-desktop-offers-title {
       display: grid;
       place-items: center;
-      margin-top: 50px;
-
-      >img {
-        width: 600px;
-      }
+      margin-top: 80px;
   
       >h1 {
         font-size: 3rem;
         margin: 0 5vw;
         text-align: center;
         transform: translateY(-20px);
+      }
+
+      >:nth-child(1) {
+        color: $text_and_logo_color;
+        font-size: 4rem;
       }
     }
 

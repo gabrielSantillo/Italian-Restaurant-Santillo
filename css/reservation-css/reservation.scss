@@ -22,10 +22,6 @@ $text_color: #feded6;
     display: grid;
   }
 
-  #page-header-desktop {
-    display: none;
-  }
-
   #page-header-mobile {
     display: grid;
     grid-auto-flow: column;
@@ -34,9 +30,14 @@ $text_color: #feded6;
     place-items: center;
   }
 
+  #page-header-desktop {
+    display: none;
+  }
+
   #page-header-logo {
     width: 80px;
     justify-self: start;
+    margin-left: 25px;
   }
 
   #page-header-menu {
