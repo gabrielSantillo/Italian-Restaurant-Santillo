@@ -423,7 +423,7 @@ img, svg, iframe {
   }
 
   .scale-up-desktop-menu-card-img {
-    transition: transform 0.6s;
+    transition: transform 0.6s 0.3s;
   }
 
   .scale-up-desktop-menu-card-img:hover {

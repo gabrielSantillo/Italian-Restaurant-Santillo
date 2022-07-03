@@ -477,6 +477,14 @@ $text_color: #feded6;
         background-position: center;
       }
 
+      .reservation-form-transition {
+        transition: transform .5s;
+      }
+      
+      .reservation-form-transition:focus {
+        transform: scale(1.1);
+      }
+
       #page-footer-contact {
         >div {
           column-gap: 50px;

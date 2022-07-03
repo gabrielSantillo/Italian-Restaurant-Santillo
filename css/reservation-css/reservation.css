@@ -440,6 +440,14 @@ img, svg, iframe {
     background-position: center;
   }
 
+  .reservation-form-transition {
+    transition: transform 0.5s;
+  }
+
+  .reservation-form-transition:focus {
+    transform: scale(1.1);
+  }
+
   #page-footer-contact > div {
     -moz-column-gap: 50px;
          column-gap: 50px;

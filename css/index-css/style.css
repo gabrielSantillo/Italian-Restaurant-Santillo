@@ -194,9 +194,18 @@ img, svg, iframe {
 }
 #page-main-reservation-form > button:active {
   background-color: transparent;
+  color: whitesmoke;
 }
 #page-main-reservation-form > button:hover {
   cursor: pointer;
+}
+
+.reservation-form-transition {
+  transition: transform 0.5s;
+}
+
+.reservation-form-transition:focus {
+  transform: scale(1.2);
 }
 
 #page-main-about {
