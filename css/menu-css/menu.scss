@@ -2,6 +2,11 @@ $text_and_logo_color: #f6c6bb;
 $background_color: #2c2c2c;
 $text_color: #feded6;
 
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -315,6 +320,10 @@ $text_color: #feded6;
       }
     }
 
+    .animation-fade-in-desktop {
+      animation: fadeIn 2s linear;
+    }
+
     #page-main-mobile {
       display: none;
     }
@@ -463,7 +472,7 @@ $text_color: #feded6;
 
     .scale-up-desktop-menu-card-img {
         transition: transform 0.6s 0.3s;
-  }
+    }
 
     .scale-up-desktop-menu-card-img:hover {
         transform: scale(1.5) translateX(-30px);
